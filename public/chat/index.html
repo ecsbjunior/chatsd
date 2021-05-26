@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat SD</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/global.css">
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="contacts">
+        <div class="self">
+          <div>
+            <h2></h2>
+            <svg onclick="window.location.href='http://localhost:3333/'" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 17L21 12L16 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 12H9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="ip"></div>
+        </div>
+        <div class="users"></div>
+      </div>
+      <div id="chat">
+        <div id="chat-messages"></div>
+        <form action="#" id="send-message">
+          <input type="text" name="text-message" id="text-message" placeholder="Escreva sua mensagem..."/>
+          <button type="submit">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M36.6425 19.9631L18.3213 19.9377" stroke="#F5F5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M36.6424 19.9631L15.0384 30.7222L18.3212 19.9377L13.2762 9.14166L36.6424 19.9631Z" stroke="#F5F5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="29.4121" height="27.0706" fill="white" transform="translate(18.3601 0.0195312) rotate(42.7056)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="../scripts/bundle.js"></script>
+  </body>
+</html>
